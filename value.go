@@ -12,6 +12,10 @@ type Value struct {
 	data interface{}
 }
 
+func NewValue(data interface{}) *Value {
+	return &Value{data: data}
+}
+
 // Data returns the raw data contained by this Value
 func (v *Value) Data() interface{} {
 	return v.data
